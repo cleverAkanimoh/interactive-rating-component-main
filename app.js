@@ -8,8 +8,6 @@ const setRating = (event) => {
   for (let index = 0; index < ratingButtons.length; index++) {
     const element = ratingButtons[index];
     element.classList.remove("active");
-    console.log(index);
-    console.log(element.classList);
   }
   rating = event.target.textContent;
   event.target.classList.add("active");
@@ -18,8 +16,6 @@ const setRating = (event) => {
 
 for (let index = 0; index < ratingButtons.length; index++) {
   const ratingButton = ratingButtons[index];
-  console.log(index);
-  console.log(ratingButton.classList);
 
   ratingButton.addEventListener("click", setRating);
 }
